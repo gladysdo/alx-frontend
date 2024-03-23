@@ -44,9 +44,13 @@ a{
     display: none;
 }
 
+/* Target the class section-header and set horizontal alignment */
+.section-header {
+  text-align: var(--section-header-align);
+}
+
 .section-tagline{
     color: var(--color-primary);
-    text-align: var(--section-header-align);
 }
 
 .card-category {
