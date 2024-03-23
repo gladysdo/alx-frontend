@@ -1,0 +1,81 @@
+/* Define Custom Properties */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black); /* Default text color */
+    --font-family-base: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway','Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem; 
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* Set font size to 62.5% of the default size (typically 16px) */
+}
+
+body{
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    height: var(--line-height-base);
+}
+
+a{
+    color: var(--text-color);
+}
+
+.visually-hidden{
+    display: none;
+}
+
+.section-tagline{
+    color: var(--color-primary);
+}
+
+.card-category {
+    color: var(--color-primary);
+}
+
+h1{
+    font-family: var(--font-family-title); /* Set font-family for section headings */
+    font-weight: var(--font-weight-bold); /* Apply font weight bold to headings */
+}
+
+h2{
+    font-family: var(--font-family-title); /* Set font-family for section headings */
+    font-weight: var(--font-weight-bold); /* Apply font weight bold to headings */
+}
+
+h3{
+    font-family: var(--font-family-title); /* Set font-family for section headings */
+    font-weight: var(--font-weight-bold); /* Apply font weight bold to headings */
+}
+
+h4{
+    font-family: var(--font-family-title); /* Set font-family for section headings */
+    font-weight: var(--font-weight-bold); /* Apply font weight bold to headings */
+}
+
+h5{
+    font-family: var(--font-family-title); /* Set font-family for section headings */
+    font-weight: var(--font-weight-bold); /* Apply font weight bold to headings */
+}
+
+h6{
+    font-family: var(--font-family-title); /* Set font-family for section headings */
+    font-weight: var(--font-weight-bold); /* Apply font weight bold to headings */
+}
