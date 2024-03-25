@@ -43,6 +43,21 @@ a{
     text-decoration: none; /* Remove default underline */
 }
 
+  /* Target visited state for the link */
+  a:visited {
+    font-style: italic; /* Italicize the text */
+  }
+  
+  /* Target hover state for the link */
+  a:hover {
+    text-decoration: underline; /* Decorate links with an underline when hovering */
+  }
+  
+  /* Target active state for the link */
+  a:active {
+    background-color: var(--color-light-grey); /* Set background color with color-light-grey variable */
+  }
+
 .visually-hidden{
     display: none;
 }
@@ -100,24 +115,3 @@ h6{
     font-family: var(--font-family-title); /* Set font-family for section headings */
     font-weight: var(--font-weight-bold); /* Apply font weight bold to headings */
 }
-
-/* Target anchor elements containing a hyperlink */
-a[href] {
-    font-style: italic; /* Italicize the text */
-  }
-  
-  /* Target visited state for the link */
-  a[href]:visited {
-    font-style: italic; /* Italicize the text */
-  }
-  
-  /* Target hover state for the link */
-  a[href]:hover {
-    text-decoration: underline; /* Decorate links with an underline when hovering */
-  }
-  
-  /* Target active state for the link */
-  a[href]:active {
-    background-color: var(--color-light-grey); /* Set background color with color-light-grey variable */
-  }
-  
