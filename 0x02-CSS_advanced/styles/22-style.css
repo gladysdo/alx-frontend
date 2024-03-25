@@ -356,7 +356,7 @@
     --color-white: #ffffff;
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
-    --text-color: #ffffff;
+    --text-color: var(--color-black); /* Default text color */
     --font-family-base: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-family-title: 'Raleway','Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-size-small: 1.2rem;
@@ -372,7 +372,7 @@
     --section-header-align: center;
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
-    --section-title-color: #ffffff; 
+    --section-title-color: var(--color-black); 
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-body-padding: 0 0 3rem;
@@ -405,7 +405,12 @@ body{
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
-    background: var(--color-black);
+}
+
+[data-section-theme="dark"] {
+  --text-color: #ffffff;
+  --section-title-color: #ffffff;
+  background: var(--color-black);
 }
 
 a{
@@ -413,20 +418,20 @@ a{
     text-decoration: none; /* Remove default underline */
 }
 
-  /* Target visited state for the link */
-  a:visited {
-    font-style: italic; /* Italicize the text */
-  }
+/* Target visited state for the link */
+a:visited {
+  font-style: italic; /* Italicize the text */
+}
   
-  /* Target hover state for the link */
-  a:hover {
-    text-decoration: underline; /* Decorate links with an underline when hovering */
-  }
+/* Target hover state for the link */
+a:hover {
+  text-decoration: underline; /* Decorate links with an underline when hovering */
+}
   
-  /* Target active state for the link */
-  a:active {
-    background-color: var(--color-light-grey); /* Set background color with color-light-grey variable */
-  }
+/* Target active state for the link */
+a:active {
+  background-color: var(--color-light-grey); /* Set background color with color-light-grey variable */
+}
 
 .visually-hidden{
     display: none;
@@ -586,3 +591,9 @@ h6{
   .footer ul {
     text-align: right;
   }
+
+  /* Style the footer-address class */
+.footer-address {
+  color: var(--text-color); /* Set the color of the text to the text-color property */
+}
+
