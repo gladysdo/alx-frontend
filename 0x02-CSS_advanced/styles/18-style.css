@@ -507,18 +507,18 @@ h6{
     font-family: var(--font-family-title); /* Set font-family for section headings */
     font-weight: var(--font-weight-bold); /* Apply font weight bold to headings */
 }
-
-.navbar-menu{
+/* styles for .nav class */
+.navbar-menu {
     float: right;
-}
-
-.nav{
+  }
+  
+  .nav {
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-.nav-item {
+  }
+  
+  .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -526,15 +526,20 @@ h6{
     display: var(--nav-item-display);
     margin: var(--nav-item-margin);
   }
-
-.nav-link{
+  
+  .nav-link {
     display: block;
-    padding: var(--root-padding-y) var(--root-padding-x);
-}
-
-.nav-link:hover {
+    padding: calc(var(--root-element) / 2) var(--root-element);
+  }
+  
+  .nav-link:hover {
     color: var(--nav-item-link-hover);
   }
+  
+
+
+
+
 
 /* Styling for .footer */
 .footer {
